@@ -1,0 +1,13 @@
+apiVersion: v1
+kind:	Pod
+metadata:
+  name:	mul-pod-connection-check-nginx-with-labels
+  namespace: default
+  labels: 
+    app: my
+spec: 
+  containers:
+  - image: nginx
+    name: nginx-containers
+    ports:
+    - containerPort: 80

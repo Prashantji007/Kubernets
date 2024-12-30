@@ -1,0 +1,11 @@
+apiVersion: v1
+kind:	Pod
+metadata:
+  name:	mul-pod-connection-check-firefox
+  namespace: default
+spec: 
+  containers:
+  - image: linuxserver/firefox
+    name: firefox-containers
+    ports:
+    - containerPort: 3000
